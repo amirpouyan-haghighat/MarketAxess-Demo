@@ -17,10 +17,10 @@ spec:
             name: kuard-service
             port:
               number: 80
-      - path: /application
-        pathType: Prefix
-        backend:
-          service:
-            name: ma-argocd-eks-server
-            port:
-              number: 80
+      # - path: /applications
+      #   pathType: Prefix
+      #   backend:
+      #     service:
+      #       name: ma-argocd-eks-server
+      #       port:
+      #         number: 80

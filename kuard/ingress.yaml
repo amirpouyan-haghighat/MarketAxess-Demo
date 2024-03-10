@@ -17,7 +17,7 @@ spec:
             name: kuard-service
             port:
               number: 80
-      - path: /
+      - path: /application
         pathType: Prefix
         backend:
           service:

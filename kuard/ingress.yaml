@@ -10,13 +10,6 @@ spec:
   rules:
   - http:
       paths:
-      - path: /applications
-        pathType: Prefix
-        backend:
-          service:
-            name: ma-argocd-eks-server
-            port:
-              number: 443
       - path: /
         pathType: Prefix
 
@@ -25,4 +18,13 @@ spec:
             name: kuard-service
             port:
               number: 80
+  - https:
+      paths:
+      - path: /applications
+        pathType: Prefix
+        backend:
+          service:
+            name: ma-argocd-eks-server
+            port:
+              number: 443
 

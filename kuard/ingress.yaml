@@ -10,13 +10,6 @@ spec:
   rules:
   - http:
       paths:
-      - path: /applications
-        pathType: Prefix
-        backend:
-          service:
-            name: ma-argocd-eks-server
-            port:
-              number: 80
       - path: /
         pathType: Prefix
         backend:

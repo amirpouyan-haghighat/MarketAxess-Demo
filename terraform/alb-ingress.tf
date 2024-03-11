@@ -34,5 +34,6 @@ resource "kubernetes_service_account" "aws_load_balancer_controller" {
       "eks.amazonaws.com/role-arn" = aws_iam_role.alb_ingress_role.arn
     }
   }
+  depends_on = [module.eks]
 }
 
